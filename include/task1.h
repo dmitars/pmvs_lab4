@@ -1,4 +1,4 @@
-#include <fuse.h>
+#include <../fuse/include/fuse.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
