@@ -36,6 +36,7 @@ script:
   - cd ${TRAVIS_BUILD_DIR}
   - aclocal
   - automake --add-missing
+  - ./configure
   - make && ./test-library.out
   - tree
 
