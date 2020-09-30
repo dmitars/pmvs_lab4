@@ -2,6 +2,11 @@
 language: c
 
 #sudo: false # only for faster builds
+before_install:
+- sudo apt-get update
+- sudo apt-get -y install tree
+- sudo apt-get install -y fuse
+- sudo apt-get install -y libfuse-dev
 
 install:
 - cd ${TRAVIS_BUILD_DIR}
@@ -35,6 +40,7 @@ script:
   - automake --add-missing
   - ./configure
   - make && ./test-library.out
+  - tree
 
 
 after_success:
