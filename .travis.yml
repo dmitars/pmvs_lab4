@@ -39,7 +39,7 @@ script:
   - automake --add-missing
   - ./configure
   - make
-  - ./src/task1 /mnt/fuse/
+  - ./src/task1 ./
   - tree
 
 
