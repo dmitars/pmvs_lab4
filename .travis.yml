@@ -38,7 +38,7 @@ script:
   - autoheader
   - automake --add-missing
   - ./configure
-  - make && ./test-library.out
+  - make
   - tree
 
 
