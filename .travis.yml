@@ -39,6 +39,7 @@ script:
   - automake --add-missing
   - ./configure
   - make
+  - ./src/task1
   - tree
 
 
