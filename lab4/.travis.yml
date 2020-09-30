@@ -1,5 +1,6 @@
 #travis configuration for coverage testing
 language: c
+os: linux
 
 #sudo: false # only for faster builds
 before_install:
